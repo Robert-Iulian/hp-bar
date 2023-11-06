@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: arial;
+}
+* img {
+  display: flex;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+body .health-bar {
+  border: 1px solid #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #222;
+}
+body .health-bar p {
+  color: grey;
+  font-weight: bold;
+}
+body .health-bar .health-container {
+  width: 200px;
+  border: 1px solid #444;
+  height: 15px;
+  border-radius: 3px;
+}
+body .health-bar .health-container .health {
+  height: 100%;
+  border-radius: 3px;
+  background-color: rgb(221, 12, 12);
+  position: relative;
+}
+body .health-bar .health-container .health::before {
+  content: "";
+  width: 95%;
+  height: 30%;
+  position: absolute;
+  top: 10%;
+  left: 2.5%;
+  background-color: rgb(250, 78, 78);
+  border-radius: 50px;
+}
+body .health-bar .health-container .health #display-hp {
+  z-index: 1;
+  color: white;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  gap: 3px;
+  width: 200px;
+}/*# sourceMappingURL=style.css.map */
